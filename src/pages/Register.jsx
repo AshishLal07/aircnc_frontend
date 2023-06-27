@@ -2,7 +2,6 @@ import {useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
-Link;
 const Register = () => {
 	const [name, setName] = useState('');
 	const [password, setPassword] = useState('');
