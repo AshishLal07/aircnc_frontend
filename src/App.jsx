@@ -21,6 +21,7 @@ axios.defaults.baseURL = 'https://aircncbackend.onrender.com';
 function App() {
 	return (
 		<UserContextProvider>
+			hello world
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<IndexPage />}></Route>
