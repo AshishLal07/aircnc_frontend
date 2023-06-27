@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overscroll-behavior: none;
+}
+
+input[type="text"],input[type='number'],input[type='email'],input[type='password'],textarea{
+  @apply w-full border my-1 py-2 px-2 rounded-2xl
+}
+
+button.primary {
+  /* background: #f5385D; */
+  @apply bg-primary w-full rounded-2xl p-2 text-white
+}
