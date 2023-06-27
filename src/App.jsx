@@ -1,17 +1,17 @@
 import {Route, Routes} from 'react-router-dom';
 import './App.css';
-import IndexPage from './pages/IndexPage';
-import LoginPage from './pages/LoginPage';
-import Layout from './Layout';
-import Register from './pages/Register';
+import IndexPage from './pages/IndexPage.jsx';
+import LoginPage from './pages/LoginPage.jsx';
+import Layout from './Layout.jsx';
+import Register from './pages/Register.jsx';
 import {UserContextProvider} from './UserContext.jsx';
 import axios from 'axios';
-import ProfilePage from './pages/ProfilePage';
-import PlacePage from './pages/PlacePage';
-import PlaceForm from './pages/container/PlaceForm';
-import HousePage from './pages/container/HousePage';
-import BookingPage from './pages/BookingPage';
-import ReservedPage from './pages/ReservedPage';
+import ProfilePage from './pages/ProfilePage.jsx';
+import PlacePage from './pages/PlacePage.jsx';
+import PlaceForm from './pages/container/PlaceForm.jsx';
+import HousePage from './pages/container/HousePage.jsx';
+import BookingPage from './pages/BookingPage.jsx';
+import ReservedPage from './pages/ReservedPage.jsx';
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseURL = 'https://aircncbackend.onrender.com';
@@ -21,7 +21,6 @@ axios.defaults.baseURL = 'https://aircncbackend.onrender.com';
 function App() {
 	return (
 		<UserContextProvider>
-			hello world
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<IndexPage />}></Route>
